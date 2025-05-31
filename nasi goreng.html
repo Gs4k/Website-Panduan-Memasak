@@ -3,10 +3,10 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- UNTUK MENYESUAIKAN TAMPILAN UTAMA UNTUK MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resep - Panduan Memasak</title>
   <style>
-    /* script untuk memberikan gaya slider menu */
+    /* Gaya tombol menu */
     .menu-toggle {
       background-color: #ff9800;
       color: white;
@@ -17,10 +17,19 @@
       margin-bottom: 10px;
     }
 
+    /* Navigasi dengan animasi slider */
     .nav-links {
-      display: none;
+      display: flex;
       flex-direction: column;
       gap: 5px;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-in-out;
+      margin-bottom: 0;
+    }
+
+    .nav-links.show {
+      max-height: 200px;
       margin-bottom: 20px;
     }
 
@@ -41,9 +50,9 @@
     .video-wrapper {
       position: relative;
       width: 100%;
-      max-width: 360px; /* Lebar maksimal video */
-      margin: 30px auto 50px auto; /* Jarak atas dan bawah */
-      padding-top: 45%; /* Rasio 9:16 (tinggi/ lebar*100) */
+      max-width: 360px;
+      margin: 30px auto 50px auto;
+      padding-top: 45%;
       background: #000;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       border-radius: 12px;
@@ -112,7 +121,7 @@
     <li>Supaya lebih tinggi protein, bisa pakai ayam atau tempe</li>
   </ol>
 
-  <!-- Tambahan embed video YouTube Shorts di bawah resep -->
+  <!-- Embed video YouTube Shorts -->
   <div class="video-wrapper">
     <iframe
       src="https://www.youtube.com/embed/PBihRacnDdI?autoplay=1&mute=1&controls=1"
@@ -124,14 +133,10 @@
   </div>
 
   <script>
-    // Fungsi toggle menu sederhana
+    // Fungsi toggle menu dengan animasi slide
     function toggleMenu() {
       const navMenu = document.getElementById('navMenu');
-      if (navMenu.style.display === "flex") {
-        navMenu.style.display = "none";
-      } else {
-        navMenu.style.display = "flex";
-      }
+      navMenu.classList.toggle('show');
     }
   </script>
 
