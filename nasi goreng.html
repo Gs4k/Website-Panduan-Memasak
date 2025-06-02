@@ -45,35 +45,12 @@
     .nav-links a:hover {
       background-color: #e0e0e0;
     }
-
-    /* Styling untuk video YouTube Shorts responsif */
-    .video-wrapper {
-      position: relative;
-      width: 100%;
-      max-width: 360px;
-      margin: 30px auto 50px auto;
-      padding-top: 45%;
-      background: #000;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    .video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 12px;
-    }
   </style>
 </head>
 <body>
   <!-- Logo dan Judul -->
   <header>
-    <img src="Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
+    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
     <h1>Kumpulan Resep</h1>
   </header>
 
@@ -93,7 +70,7 @@
 
   <!-- Resep 1: Nasi Goreng -->
   <h2 id="nasi-goreng">Nasi Goreng (High Protein)</h2>
-  <img src="Nasi Goreng.jpg" alt="Nasi Goreng" style="width: 400px;">
+  <img src="media/gambar/Nasi goreng/Nasi Goreng.jpg" alt="Nasi Goreng" style="width: 400px;">
   <h3>Bahan-bahan:</h3>
   <ul>
     <li>2 Telur</li>
@@ -121,10 +98,19 @@
     <li>Supaya lebih tinggi protein, bisa pakai ayam atau tempe</li>
   </ol>
 
+ <!-- Timer -->
+  <div class="alarm-section">
+    <h3>⏳ Timer Memasak (15 Menit)</h3>
+    <div id="timerDisplay" style="font-size: 24px; margin: 10px 0;">15:00</div>
+    <button onclick="startTimer()">Mulai</button>
+    <button onclick="stopTimer()">Berhenti</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+
   <!-- Embed video YouTube Shorts -->
   <div class="video-wrapper">
     <iframe
-      src="https://www.youtube.com/embed/PBihRacnDdI?autoplay=1&mute=1&controls=1"
+      src="media/video/Nasi goreng.mp4"
       title="YouTube Shorts Video Nasi Goreng"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
@@ -139,6 +125,7 @@
       navMenu.classList.toggle('show');
     }
   </script>
-
+<!-- JavaScript -->
+  <script src="timer.js"></script>
 </body>
 </html>
