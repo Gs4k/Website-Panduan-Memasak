@@ -1,0 +1,161 @@
+<!-- resep.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resep - Panduan Memasak</title>
+  <style>
+    /* Gaya tombol menu */
+    .menu-toggle {
+      background-color: #ff9800;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    /* Navigasi dengan animasi slider */
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-in-out;
+      margin-bottom: 0;
+    }
+
+    .nav-links.show {
+      max-height: 200px;
+      margin-bottom: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f2f2f2;
+    }
+
+    .nav-links a:hover {
+      background-color: #e0e0e0;
+    }
+
+    /* Styling untuk video YouTube Shorts responsif */
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 360px;
+      margin: 30px auto 50px auto;
+      padding-top: 45%;
+      background: #000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo dan Judul -->
+  <header>
+    <img src="Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
+    <h1>Kumpulan Resep</h1>
+  </header>
+
+  <!-- Navigasi kembali -->
+  <div style="margin-bottom: 10px;">
+    <a href="resep makanan.html">← Kembali ke Resep Makanan</a>
+  </div>
+
+  <!-- Tombol Toggle Menu -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <nav class="nav-links" id="navMenu">
+    <a href="index.html">Beranda</a>
+    <a href="resep makanan.html">Resep Makanan</a>
+    <a href="resep minuman.html">Resep Minuman</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <!-- Resep 1: Nasi Goreng -->
+  <h2 id="ketoprak">Ketoprak</h2>
+  <img src="media/gambar/Ketoprak.jpg" alt="Ketoprak" style="width: 400px;">
+  <h3>Bahan-bahan:</h3>
+  <ul>
+    <li>2 buah tahu putih</li>
+    <li>2 buah ketupat, potong</li>
+    <li>3 Siung Bawang Merah</li>
+    <li>50gr taoge</li>
+    <li>100gr bihun</li>
+    <li>3 sdm Kecap Manis</li>
+  </ul>
+
+  <h3>Bahan bumbu kacang:</h3>
+  <ul>
+    <li>150gr kacang tanah</li>
+    <li>1 sdm gula merah, sisir</li>
+    <li>1 siung bawang putihh</li>
+    <li>4 buah cabai rawit merah</li>
+    <li>½ sdt garam</li>
+    <li>2 sdm air asam jawa</li>
+    <li>Air</li>
+  </ul>
+
+  <h3>Bahan pelengkap:</h3>
+  <ul>
+    <li>1 sdm bawang merah goreng dan kerupuk kuning</li>
+  </ul>
+
+  <h3>Langkah-langkah:</h3>
+  <ol>
+    <li>1. Goreng tahu putih hingga berkulit dan blansir taoge dengan air panas. Kemudian, haluskan kacang tanah goreng, gula merah, cabai rawit merah dan bawang putih.</li>
+    <li>2. Tambahkan garam, air asam jawa, dan air matang secukupnya, lalu ulek kembali hingga bumbu kacang halus. Pindahkan ke mangkuk.</li>
+    <li>3. Ambil piring saji, susun dari bawah ke atas dengan urutan sebagai berikut: ketupat, taoge, tahu, dan bihun. Setelah semua bahan lengkap di piring, tuangkan bumbu kacang.</li>
+    <li>4. Tambahkan Kecap Manis di atasnya. Terakhir, sajikan dengan taburan bawang goreng dan kerupuk.</li>
+  </ol>
+
+ <!-- Timer -->
+  <div class="alarm-section">
+    <h3>⏳ Timer Memasak (30 Menit)</h3>
+    <div id="timerDisplay" style="font-size: 24px; margin: 10px 0;">30:00</div>
+    <button onclick="startTimer()">Mulai</button>
+    <button onclick="stopTimer()">Berhenti</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+
+  <!-- Embed video YouTube Shorts -->
+  <div class="video-wrapper">
+    <iframe
+      src="https://youtu.be/RjnimN6Hce4?si=WthUkKSUNdKXe2WD"
+      title="Youtube Ketoprak"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      allowautoplay>
+    </iframe>
+  </div>
+
+  <script>
+    // Fungsi toggle menu dengan animasi slide
+    function toggleMenu() {
+      const navMenu = document.getElementById('navMenu');
+      navMenu.classList.toggle('show');
+    }
+  </script>
+<!-- JavaScript -->
+  <script src="timer2.js"></script>
+</body>
+</html>
