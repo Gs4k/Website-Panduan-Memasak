@@ -8,4 +8,18 @@ Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang u
 | Yoga          | 240010060   | kazuha843       | JavaScript Developer  |
 | Danta         | 240010068   | DantaPawana25   | Documentation Manager |
 
-### Teknologi yang Digunakan 
+### Teknologi yang Digunakan :computer:
+- HTML
+- CSS
+- JavaScript
+
+### Fitur Utama :wrench:
+-
+### Struktur Folder :open_file_folder:
+-
+
+### Cara Menjalankan Website :globe_with_meridians:
+-
+
+### Tautan GitHub Pages :link:
+https://github.com/Gs4k/Website-Panduan-Memasak.git
