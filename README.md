@@ -14,7 +14,9 @@ Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang u
 - JavaScript
 
 ### Fitur Utama :wrench:
+- Video tutorial
 -
+- 
 ### Struktur Folder :open_file_folder:
 -
 
