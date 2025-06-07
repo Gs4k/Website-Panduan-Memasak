@@ -1,0 +1,95 @@
+<!-- resep.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Resep - Panduan Memasak</title>
+</head>
+<body>
+  <!-- Logo dan Judul -->
+  <header>
+    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
+    <h1>Kumpulan Resep</h1>
+  </header>
+
+  <!-- Navigasi kembali -->
+  <div style="margin-bottom: 10px;">
+    <a href="resep minuman.html">← Kembali ke Resep Minuman</a>
+  </div>
+
+  <!-- Tombol Toggle Menu -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <nav class="nav-links" id="navMenu">
+    <a href="index.html">Beranda</a>
+    <a href="resep makanan.html">Resep Makanan</a>
+    <a href="resep minuman.html">Resep Minuman</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+ <!-- Resep: Teh Tarik -->
+<h2 id="teh-tarik">🫖 Teh Tarik</h2>
+<img src="media/gambar/Teh Tarik/teh tarik.jpeg" alt="Teh Tarik" style="width: 400px;">
+
+<h3>Bahan-Bahan:</h3>
+<ul>
+  <li>2 sdm teh</li>
+  <li>80 ml susu kental manis</li>
+  <li>80 ml susu evaporasi</li>
+  <li>650 ml air panas</li>
+  <li>½ sdt garam</li>
+</ul>
+
+<h3>Langkah-Langkah:</h3>
+<ol>
+  <li><strong>Seduh Teh:</strong><br>
+    Seduh 2 sdm teh dengan 650 ml air panas hingga warna pekat.
+  </li>
+  <li><strong>Campur Susu dan Garam:</strong><br>
+    Saring teh, lalu tambahkan susu kental manis, susu evaporasi, dan garam. Aduk rata hingga larut.
+  </li>
+  <li><strong>Proses "Menarik" Teh:</strong><br>
+    Siapkan dua gelas. Tuangkan teh dari satu gelas ke gelas lainnya dengan ditarik tinggi agar berbusa.<br>
+    Ulangi proses "menarik" ini sebanyak 6 kali hingga busa terbentuk sempurna.
+  </li>
+  <li><strong>Sajikan:</strong><br>
+    Tuang ke dalam gelas saji. Nikmati teh tarik dalam keadaan hangat.
+  </li>
+</ol>
+
+
+ <!-- Timer -->
+  <input type="number" id="minutesInput" placeholder="Enter minutes" min="1">
+  <button onclick="setTime()">Set Time</button>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
+
+  <div id="timerDisplay">00:00</div>
+
+  <!-- Embed video -->
+<div class="video-wrapper" style="margin-top: 20px;">
+  <iframe width="400" height="225"
+    src="media/video/teh tarik.mp4"
+    title="Teh Tarik"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+  <script>
+    // Fungsi toggle menu dengan animasi slide
+    function toggleMenu() {
+      const navMenu = document.getElementById('navMenu');
+      navMenu.classList.toggle('show');
+    }
+  </script>
+<!-- JavaScript -->
+  <script src="script.js"></script>
+  <audio id="alarmAudio" src="media/audio/alarm.mp3" preload="auto"></audio>
+  <footer>
+    <p style="text-align:center; margin-top: 40px;">&copy; 2025 Kelompok Website Panduan Memasak.id - Semua hak dilindungi</p>
+  </footer>
+</body>
+</html>
