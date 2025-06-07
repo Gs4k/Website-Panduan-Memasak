@@ -1,0 +1,105 @@
+<!-- resep.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Resep - Panduan Memasak</title>
+</head>
+<body>
+  <!-- Logo dan Judul -->
+  <header>
+    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
+    <h1>Kumpulan Resep</h1>
+  </header>
+
+  <!-- Navigasi kembali -->
+  <div style="margin-bottom: 10px;">
+    <a href="resep makanan.html">← Kembali ke Resep Makanan</a>
+  </div>
+
+  <!-- Tombol Toggle Menu -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <nav class="nav-links" id="navMenu">
+    <a href="index.html">Beranda</a>
+    <a href="resep makanan.html">Resep Makanan</a>
+    <a href="resep minuman.html">Resep Minuman</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <!-- Resep Telur Bumbu Kecap -->
+<h2 id="telur-bumbu-kecap">Telur Bumbu Kecap</h2>
+<img src="media/gambar/Telur kecap/Telur Kecap.jpg" alt="Telur Bumbu Kecap" style="width: 400px;">
+
+<h3>Bahan-bahan:</h3>
+<ul>
+  <li>7 butir telur</li>
+</ul>
+
+<h3>Bumbu Halus:</h3>
+<ul>
+  <li>3 siung bawang merah</li>
+  <li>3 siung bawang putih</li>
+  <li>2 butir kemiri</li>
+  <li>2 cm jahe, memarkan</li>
+  <li>2 cm kayu manis</li>
+</ul>
+
+<h3>Bumbu Lainnya:</h3>
+<ul>
+  <li>3-4 sdm kecap manis</li>
+  <li>1 sdm gula merah</li>
+  <li>1/2 sdt garam</li>
+  <li>1/2 sdt kaldu ayam bubuk</li>
+  <li>1/4 sdt lada bubuk</li>
+  <li>1 siung bawang merah, iris tipis</li>
+  <li>250 ml air</li>
+</ul>
+
+<h3>Langkah-langkah:</h3>
+<ol>
+  <li>Rebus 7 butir telur, kupas kulitnya dan sisihkan.</li>
+  <li>Haluskan bawang merah, bawang putih, dan kemiri. Tambahkan jahe geprek dan kayu manis.</li>
+  <li>Siapkan irisan bawang merah dan bumbu lainnya.</li>
+  <li>Panaskan minyak, goreng bawang merah iris hingga keemasan, lalu angkat dan sisihkan.</li>
+  <li>Tumis bumbu halus bersama jahe geprek dan kayu manis hingga harum.</li>
+  <li>Tambahkan air, kecap manis, gula merah, garam, kaldu ayam bubuk, dan lada bubuk. Aduk rata.</li>
+  <li>Masukkan telur rebus. Masak hingga air menyusut dan bumbu meresap ke dalam telur sambil sesekali diaduk.</li>
+  <li>Koreksi rasa. Sajikan dengan taburan bawang goreng jika suka.</li>
+</ol>
+
+ <!-- Timer -->
+ <input type="number" id="minutesInput" placeholder="Enter minutes" min="1">
+  <button onclick="setTime()">Set Time</button>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
+
+  <div id="timerDisplay">00:00</div>
+
+  <!-- Embed video -->
+<div class="video-wrapper" style="margin-top: 20px;">
+  <iframe width="400" height="225"
+    src="media/video/Telur kecap.mp4"
+    title="Video Telur Kecap"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      allowautoplay>
+  </iframe>
+</div>
+
+  <script>
+    // Fungsi toggle menu dengan animasi slide
+    function toggleMenu() {
+      const navMenu = document.getElementById('navMenu');
+      navMenu.classList.toggle('show');
+    }
+  </script>
+<!-- JavaScript -->
+  <script src="script.js"></script>
+  <audio id="alarmAudio" src="media/audio/alarm.mp3" preload="auto"></audio>
+  <footer>
+    <p style="text-align:center; margin-top: 40px;">&copy; 2025 Kelompok Website Panduan Memasak.id - Semua hak dilindungi</p>
+  </footer>
+</body>
+</html>
