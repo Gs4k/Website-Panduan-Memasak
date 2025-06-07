@@ -4,48 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Menghubungkan halaman dengan file CSS eksternal untuk styling -->
   <title>Resep - Panduan Memasak</title>
-  <style>
-    /* Gaya tombol menu */
-    .menu-toggle {
-      background-color: #ff9800;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    /* Navigasi dengan animasi slider */
-    .nav-links {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.4s ease-in-out;
-      margin-bottom: 0;
-    }
-
-    .nav-links.show {
-      max-height: 200px;
-      margin-bottom: 20px;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #333;
-      padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background-color: #f2f2f2;
-    }
-
-    .nav-links a:hover {
-      background-color: #e0e0e0;
-    }
-  </style>
 </head>
 <body>
   <!-- Logo dan Judul -->
@@ -99,19 +60,18 @@
   </ol>
 
  <!-- Timer -->
-  <div class="alarm-section">
-    <h3>⏳ Timer Memasak (15 Menit)</h3>
-    <div id="timerDisplay" style="font-size: 24px; margin: 10px 0;">15:00</div>
-    <button onclick="startTimer()">Mulai</button>
-    <button onclick="stopTimer()">Berhenti</button>
-    <button onclick="resetTimer()">Reset</button>
-  </div>
+<input type="number" id="minutesInput" placeholder="Enter minutes" min="1">
+  <button onclick="setTime()">Set Time</button>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
 
-  <!-- Embed video YouTube Shorts -->
+  <div id="timerDisplay">00:00</div>
+
+  <!-- Video memasak -->
   <div class="video-wrapper">
     <iframe
       src="media/video/Nasi goreng.mp4"
-      title="YouTube Shorts Video Nasi Goreng"
+      title="Video Nasi Goreng"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
       allowautoplay>
@@ -126,6 +86,10 @@
     }
   </script>
 <!-- JavaScript -->
-  <script src="timer.js"></script>
+  <script src="script.js"></script>
+  <audio id="alarmAudio" src="media/audio/alarm.mp3" preload="auto"></audio>
+  <footer>
+    <p style="text-align:center; margin-top: 40px;">&copy; 2025 Kelompok Website Panduan Memasak.id - Semua hak dilindungi</p>
+  </footer>
 </body>
 </html>
