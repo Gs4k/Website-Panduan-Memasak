@@ -4,76 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
   <title>Resep - Panduan Memasak</title>
-  <style>
-    /* Gaya tombol menu */
-    .menu-toggle {
-      background-color: #ff9800;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    /* Navigasi dengan animasi slider */
-    .nav-links {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.4s ease-in-out;
-      margin-bottom: 0;
-    }
-
-    .nav-links.show {
-      max-height: 200px;
-      margin-bottom: 20px;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #333;
-      padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background-color: #f2f2f2;
-    }
-
-    .nav-links a:hover {
-      background-color: #e0e0e0;
-    }
-
-    /* Styling untuk video YouTube Shorts responsif */
-    .video-wrapper {
-      position: relative;
-      width: 100%;
-      max-width: 360px;
-      margin: 30px auto 50px auto;
-      padding-top: 45%;
-      background: #000;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    .video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 12px;
-    }
-  </style>
 </head>
 <body>
   <!-- Logo dan Judul -->
   <header>
-    <img src="Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
+    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
     <h1>Kumpulan Resep</h1>
   </header>
 
@@ -91,9 +28,9 @@
     <a href="kontak.html">Kontak</a>
   </nav>
 
-  <!-- Resep 1: Nasi Goreng -->
+  <!-- Resep Ketoprak -->
   <h2 id="ketoprak">Ketoprak</h2>
-  <img src="media/gambar/Ketoprak.jpg" alt="Ketoprak" style="width: 400px;">
+  <img src="media/gambar/Ketoprak/Ketoprak.jpg" alt="Ketoprak" style="width: 400px;">
   <h3>Bahan-bahan:</h3>
   <ul>
     <li>2 buah tahu putih</li>
@@ -122,26 +59,25 @@
 
   <h3>Langkah-langkah:</h3>
   <ol>
-    <li>1. Goreng tahu putih hingga berkulit dan blansir taoge dengan air panas. Kemudian, haluskan kacang tanah goreng, gula merah, cabai rawit merah dan bawang putih.</li>
-    <li>2. Tambahkan garam, air asam jawa, dan air matang secukupnya, lalu ulek kembali hingga bumbu kacang halus. Pindahkan ke mangkuk.</li>
-    <li>3. Ambil piring saji, susun dari bawah ke atas dengan urutan sebagai berikut: ketupat, taoge, tahu, dan bihun. Setelah semua bahan lengkap di piring, tuangkan bumbu kacang.</li>
-    <li>4. Tambahkan Kecap Manis di atasnya. Terakhir, sajikan dengan taburan bawang goreng dan kerupuk.</li>
+    <li>Goreng tahu putih hingga berkulit dan blansir taoge dengan air panas. Kemudian, haluskan kacang tanah goreng, gula merah, cabai rawit merah dan bawang putih.</li>
+    <li>Tambahkan garam, air asam jawa, dan air matang secukupnya, lalu ulek kembali hingga bumbu kacang halus. Pindahkan ke mangkuk.</li>
+    <li>Ambil piring saji, susun dari bawah ke atas dengan urutan sebagai berikut: ketupat, taoge, tahu, dan bihun. Setelah semua bahan lengkap di piring, tuangkan bumbu kacang.</li>
+    <li>Tambahkan Kecap Manis di atasnya. Terakhir, sajikan dengan taburan bawang goreng dan kerupuk.</li>
   </ol>
 
  <!-- Timer -->
-  <div class="alarm-section">
-    <h3>⏳ Timer Memasak (30 Menit)</h3>
-    <div id="timerDisplay" style="font-size: 24px; margin: 10px 0;">30:00</div>
-    <button onclick="startTimer()">Mulai</button>
-    <button onclick="stopTimer()">Berhenti</button>
-    <button onclick="resetTimer()">Reset</button>
-  </div>
+ <input type="number" id="minutesInput" placeholder="Enter minutes" min="1">
+  <button onclick="setTime()">Set Time</button>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
+
+  <div id="timerDisplay">00:00</div>
 
   <!-- Embed video YouTube Shorts -->
   <div class="video-wrapper">
     <iframe
-      src="https://youtu.be/RjnimN6Hce4?si=WthUkKSUNdKXe2WD"
-      title="Youtube Ketoprak"
+      src="media/video/Ketoprak.mp4"
+      title="Video Ketoprak"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
       allowautoplay>
@@ -156,6 +92,10 @@
     }
   </script>
 <!-- JavaScript -->
-  <script src="timer2.js"></script>
+  <script src="script.js"></script>
+  <audio id="alarmAudio" src="media/audio/alarm.mp3" preload="auto"></audio>
+  <footer>
+    <p style="text-align:center; margin-top: 40px;">&copy; 2025 Kelompok Website Panduan Memasak.id - Semua hak dilindungi</p>
+  </footer>
 </body>
 </html>
