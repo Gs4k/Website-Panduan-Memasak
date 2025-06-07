@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Kontak - Panduan Memasak</title>
+</head>
+<body>
+  <header>
+    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" />
+    <h1>Hubungi Kami</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="resep makanan.html">Resep Makanan</a>
+      <a href="resep minuman.html">Resep Minuman</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form" style="max-width: 600px; margin: auto;">
+      <!-- Form mengarah ke halaman pesan-terkirim.html -->
+      <form action="kontak-terkirim.html" method="get" style="display: flex; flex-direction: column; gap: 15px;">
+        <label>Nama:
+          <input type="text" name="nama" required style="padding: 8px; width: 100%; border-radius: 5px; border: 1px solid #ccc;" />
+        </label>
+
+        <label>Pesan:
+          <textarea name="pesan" rows="5" required style="padding: 8px; width: 100%; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+        </label>
+
+        <input type="submit" value="Kirim" style="background-color: #ff914d; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kelompok Website Panduan Memasak.id - Semua hak dilindungi</p>
+  </footer>
+</body>
+</html>
