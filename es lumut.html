@@ -1,0 +1,98 @@
+<!-- resep.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Resep - Panduan Memasak</title>
+</head>
+<body>
+  <!-- Logo dan Judul -->
+  <header>
+    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
+    <h1>Kumpulan Resep</h1>
+  </header>
+
+  <!-- Navigasi kembali -->
+  <div style="margin-bottom: 10px;">
+    <a href="resep minuman.html">← Kembali ke Resep Minuman</a>
+  </div>
+
+  <!-- Tombol Toggle Menu -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <nav class="nav-links" id="navMenu">
+    <a href="index.html">Beranda</a>
+    <a href="resep makanan.html">Resep Makanan</a>
+    <a href="resep minuman.html">Resep Minuman</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+ <!-- Resep: Es Lumut Coklat -->
+<h2 id="es-lumut-coklat">🍫 Es Lumut Coklat</h2>
+<img src="media/gambar/Es Lumut/es lumut.jpeg" alt="Es Lumut Coklat" style="width: 400px;">
+
+<h3>Bahan-Bahan:</h3>
+<ul>
+  <li>1 sachet Nutrijell coklat</li>
+  <li>2 sdm coklat bubuk</li>
+  <li>700 ml air</li>
+  <li>5 sdm gula pasir</li>
+  <li>1 kaleng susu evaporasi</li>
+  <li>½ kaleng susu kental manis</li>
+  <li>Es batu secukupnya</li>
+</ul>
+
+<h3>Langkah-Langkah:</h3>
+<ol>
+  <li><strong>Campurkan Bahan Kering:</strong><br>
+    Campur Nutrijell coklat, coklat bubuk, dan gula pasir. Aduk hingga rata agar tidak menggumpal.
+  </li>
+  <li><strong>Tambahkan Air:</strong><br>
+    Tuang 700 ml air, aduk hingga larut sempurna.
+  </li>
+  <li><strong>Masak Campuran Jelly:</strong><br>
+    Masak di atas api sedang sambil diaduk hingga mendidih.
+  </li>
+  <li><strong>Tuang ke Wadah Berisi Es Batu:</strong><br>
+    Tuang jelly panas ke dalam wadah berisi es batu. Aduk cepat hingga membentuk serat-serat seperti lumut.
+  </li>
+  <li><strong>Tambahkan Susu:</strong><br>
+    Masukkan ½ kaleng susu kental manis dan 1 kaleng susu evaporasi. Aduk rata.
+  </li>
+</ol>
+
+ <!-- Timer -->
+<input type="number" id="minutesInput" placeholder="Enter minutes" min="1">
+  <button onclick="setTime()">Set Time</button>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
+
+  <div id="timerDisplay">00:00</div>
+
+  <!-- Embed video -->
+<div class="video-wrapper" style="margin-top: 20px;">
+  <iframe width="400" height="225"
+    src="media/video/es lumut.mp4"
+    title="Es Lumut"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+  <script>
+    // Fungsi toggle menu dengan animasi slide
+    function toggleMenu() {
+      const navMenu = document.getElementById('navMenu');
+      navMenu.classList.toggle('show');
+    }
+  </script>
+<!-- JavaScript -->
+  <script src="script.js"></script>
+  <audio id="alarmAudio" src="media/audio/alarm.mp3" preload="auto"></audio>
+  <footer>
+    <p style="text-align:center; margin-top: 40px;">&copy; 2025 Kelompok Website Panduan Memasak.id - Semua hak dilindungi</p>
+  </footer>
+</body>
+</html>
