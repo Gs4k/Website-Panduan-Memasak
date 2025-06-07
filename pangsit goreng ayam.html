@@ -1,0 +1,97 @@
+<!-- resep.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Resep - Panduan Memasak</title>
+</head>
+<body>
+  <!-- Logo dan Judul -->
+  <header>
+    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
+    <h1>Kumpulan Resep</h1>
+  </header>
+
+  <!-- Navigasi kembali -->
+  <div style="margin-bottom: 10px;">
+    <a href="resep makanan.html">← Kembali ke Resep Makanan</a>
+  </div>
+
+  <!-- Tombol Toggle Menu -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <nav class="nav-links" id="navMenu">
+    <a href="index.html">Beranda</a>
+    <a href="resep makanan.html">Resep Makanan</a>
+    <a href="resep minuman.html">Resep Minuman</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <!-- Resep Pangsit goreng Ayam -->
+  <h2 id="pangsit-goreng-ayam">Pangsit Goreng Ayam</h2>
+  <img src="media/gambar/Pangsit goreng ayam/Pangsit Goreng Ayam.jpg" alt="Pangsit Goreng Ayam" style="width: 400px;">
+  <h3>Bahan-bahan:</h3>
+<ul>
+  <li>250 gr dada ayam</li>
+  <li>3 siung bawang putih (dihaluskan)</li>
+  <li>1/2 sdt merica bubuk</li>
+  <li>1 buah wortel (diparut)</li>
+  <li>1 batang daun bawang</li>
+  <li>1 butir telur ayam</li>
+  <li>1/2 sdm minyak wijen</li>
+  <li>1 sdt saus tiram</li>
+  <li>1/2 sdt garam</li>
+  <li>1/2 sdt kaldu bubuk</li>
+  <li>3 sdm tepung tapioka</li>
+  <li>1 sdm tepung terigu</li>
+  <li>250 gr kulit pangsit</li>
+</ul>
+
+  <h3>Langkah-langkah:</h3>
+<ol>
+  <li>Cincang atau blender 250 gram dada ayam fillet hingga halus.</li>
+  <li>Masukkan ayam yang sudah dihaluskan ke dalam wadah.</li>
+  <li>Tambahkan bawang putih, merica, garam, kaldu bubuk, dan telur, aduk rata.</li>
+  <li>Masukkan tepung tapioka dan terigu, aduk rata.</li>
+  <li>Tambahkan saus tiram dan minyak wijen.</li>
+  <li>Masukkan wortel parut, daun bawang dan bawang prei, aduk rata kembali.</li>
+  <li>Ambil kulit pangsit, beri adonan ayam, olesi pinggirannya dengan air, lalu lipat sesuai selera.</li>
+  <li>Panaskan minyak, goreng pangsit hingga keemasan dengan api sedang.</li>
+  <li>Angkat dan tiriskan, siap disajikan sebagai camilan atau pelengkap.</li>
+</ol>
+
+ <!-- Timer -->
+<input type="number" id="minutesInput" placeholder="Enter minutes" min="1">
+  <button onclick="setTime()">Set Time</button>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
+
+  <div id="timerDisplay">00:00</div>
+
+  <!-- Embed video -->
+<div class="video-wrapper" style="margin-top: 20px;">
+  <iframe width="400" height="225"
+    src="media/video/Pangsit goreng ayam.mp4"
+    title="Video Pangsit Goreng Ayam"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      allowautoplay>
+  </iframe>
+</div>
+
+  <script>
+    // Fungsi toggle menu dengan animasi slide
+    function toggleMenu() {
+      const navMenu = document.getElementById('navMenu');
+      navMenu.classList.toggle('show');
+    }
+  </script>
+<!-- JavaScript -->
+  <script src="script.js"></script>
+  <audio id="alarmAudio" src="media/audio/alarm.mp3" preload="auto"></audio>
+  <footer>
+    <p style="text-align:center; margin-top: 40px;">&copy; 2025 Kelompok Website Panduan Memasak.id - Semua hak dilindungi</p>
+  </footer>
+</body>
+</html>
