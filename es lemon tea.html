@@ -1,0 +1,102 @@
+<!-- resep.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Resep - Panduan Memasak</title>
+</head>
+<body>
+  <!-- Logo dan Judul -->
+  <header>
+    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
+    <h1>Kumpulan Resep</h1>
+  </header>
+
+  <!-- Navigasi kembali -->
+  <div style="margin-bottom: 10px;">
+    <a href="resep minuman.html">← Kembali ke Resep Minuman</a>
+  </div>
+
+  <!-- Tombol Toggle Menu -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <nav class="nav-links" id="navMenu">
+    <a href="index.html">Beranda</a>
+    <a href="resep makanan.html">Resep Makanan</a>
+    <a href="resep minuman.html">Resep Minuman</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+ <!-- Resep: Es Lemon Tea Segar -->
+<h2 id="es-lemon-tea">🍋 Es Lemon Tea Segar</h2>
+<img src="media/gambar/Es Lemon Tea/es lemon tea.jpeg" alt="Es Lemon Tea Segar" style="width: 400px;">
+
+<h3>Bahan-Bahan:</h3>
+
+<h4>Untuk Biang Teh (500 ml):</h4>
+<ul>
+  <li>150 gram gula pasir</li>
+  <li>3 kantong teh celup</li>
+  <li>500 ml air</li>
+  <li>2 buah jeruk lemon (dipakai 1½ buah untuk perasan, ½ buah untuk topping/irisan)</li>
+</ul>
+
+<h4>Untuk Penyajian (per gelas):</h4>
+<ul>
+  <li>Es batu secukupnya</li>
+  <li>Irisan lemon untuk topping</li>
+  <li>Gelas 16 oz (isi 150 ml biang teh) atau gelas 22 oz (isi 200 ml biang teh)</li>
+</ul>
+
+<h3>Langkah-Langkah:</h3>
+<ol>
+  <li><strong>Rebus Biang Teh:</strong><br>
+    Rebus air bersama gula dan 3 kantong teh celup hingga mendidih dan warna pekat. Angkat dan dinginkan.
+  </li>
+  <li><strong>Peras Lemon:</strong><br>
+    Peras 1½ buah lemon (sekitar 50 ml air lemon). Sisihkan ½ buah lemon untuk topping.
+  </li>
+  <li><strong>Campur Lemon ke Biang Teh:</strong><br>
+    Tuang perasan lemon ke dalam biang teh, aduk rata.
+  </li>
+  <li><strong>Siapkan Gelas dengan Es Batu:</strong><br>
+    - Gelas 16 oz: tuang 150 ml biang teh + es batu + irisan lemon.<br>
+    - Gelas 22 oz: tuang 200 ml biang teh + es batu + irisan lemon.
+  </li>
+</ol>
+
+ <!-- Timer -->
+<input type="number" id="minutesInput" placeholder="Enter minutes" min="1">
+  <button onclick="setTime()">Set Time</button>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
+
+  <div id="timerDisplay">00:00</div>
+
+  <!-- Embed video -->
+<div class="video-wrapper" style="margin-top: 20px;">
+  <iframe width="400" height="225"
+    src="media/video/es lemon tea.mp4"
+    title="Es Lemon Tea Segar"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+  <script>
+    // Fungsi toggle menu dengan animasi slide
+    function toggleMenu() {
+      const navMenu = document.getElementById('navMenu');
+      navMenu.classList.toggle('show');
+    }
+  </script>
+<!-- JavaScript -->
+  <script src="script.js"></script>
+  <audio id="alarmAudio" src="media/audio/alarm.mp3" preload="auto"></audio>
+  <footer>
+    <p style="text-align:center; margin-top: 40px;">&copy; 2025 Kelompok Website Panduan Memasak.id - Semua hak dilindungi</p>
+  </footer>
+</body>
+</html>
