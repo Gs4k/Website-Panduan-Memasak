@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
   alarmAudio = document.getElementById('alarmAudio');
   updateDisplay(); 
 });
-
+/* set timer durasi dari yang d di input user*/
 function setTime() {
   stopTimer(); 
   const minutes = document.getElementById('minutesInput').value;
@@ -18,7 +18,7 @@ function setTime() {
   }
 }
 
-
+/*fungsi untuk memulai hitung mundur*/ 
 function startTimer() {
   if (timer) return; 
 
@@ -36,6 +36,30 @@ function startTimer() {
       updateDisplay();
     }
   }, 1000);
+}
+
+/*fungsi untuk stop timer saat sudah berjalan*/
+function stopTimer(){
+   clearInterval(timer);
+  timer = null;
+  if (alarmAudio) {
+    alarmAudio.pause();
+    alarmAudio.currentTime = 0;
+  }
+}
+
+/* fungsi reset ke menit yang terakhir dimasukan*/
+function resetTimer() {
+  stopTimer();
+  timeLeft = initialTime; 
+  updateDisplay();
+}
+
+/*unruk update tampilan menit dan detik timer*/
+function updateDisplay() {
+  const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+  const seconds = String(timeLeft % 60).padStart(2, '0');
+  document.getElementById('timerDisplay').textContent = `${minutes}:${seconds}`;
 }
 
 
