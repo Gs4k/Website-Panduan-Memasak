@@ -12,16 +12,18 @@ Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang u
 - HTML
 - CSS
 - JavaScript
+- Media
 
 ### Fitur Utama :wrench:
-- Video tutorial
--
+- Media/Video tutorial
+- Kontak
 - 
 ### Struktur Folder :open_file_folder:
--
+- Index.html:
+- 
 
 ### Cara Menjalankan Website :globe_with_meridians:
--
+1. 
 
 ### Tautan GitHub Pages :link:
 https://github.com/Gs4k/Website-Panduan-Memasak.git
