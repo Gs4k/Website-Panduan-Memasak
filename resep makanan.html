@@ -1,49 +1,61 @@
-<!-- resep.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Membuat tampilan halaman menyesuaikan dengan ukuran layar perangkat (responsive) -->
-     <link rel="stylesheet" href="style.css" />
-    <!-- Menghubungkan halaman dengan file CSS eksternal untuk styling -->
+  <link rel="stylesheet" href="style.css" />
   <title>Resep - Panduan Memasak</title>
 </head>
 <body>
-  <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" width="150">
-  <h1>Kumpulan Resep</h1>
-  <nav>
-     <a href="index.html">Beranda</a>
-     <a href="resep makanan.html">Resep Makanan</a>
-     <a href="resep minuman.html">Resep Minuman</a>
-     <a href="kontak.html">Kontak</a>
-  </nav>
-  <h2>Daftar Resep</h2>
-  <ul>
-    <li><a href="nasi goreng.html">Nasi Goreng (High Protein)</a></li>
-     <div id="nasi-goreng">
-    <img src="media/gambar/Nasi goreng/Nasi Goreng.jpg" alt="Nasi Goreng" width="300">
-  </div>
+  <header>
+    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" />
+    <h1>Kumpulan Resep</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="resep makanan.html">Resep Makanan</a>
+      <a href="resep minuman.html">Resep Minuman</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
 
-    <li><a href="ketoprak.html">Ketoprak</a></li>
-    <div id="ketoprak">
-    <img src="media/gambar/Ketoprak/Ketoprak.jpg" alt="Ketoprak" width="300">
-  </div>
+  <main>
+    <section class="featured-recipes">
+      <h2>Daftar Resep</h2>
 
-    <li><a href="pangsit goreng ayam.html">Pangsit Goreng Ayam</a></li>
-<div id="pangsit-ayam">
-    <img src="media/gambar/Pangsit goreng ayam/Pangsit Goreng Ayam.jpg" alt="Pangsit Goreng Ayam" width="300">
-  </div>
+      <div class="card">
+        <img src="media/gambar/Nasi goreng/Nasi Goreng.jpg" alt="Nasi Goreng" />
+        <h3>Nasi Goreng (High Protein)</h3>
+        <a href="nasi goreng.html">Lihat Resep</a>
+      </div>
 
-    <li><a href="donat kentang.html">Donat Kentang</a></li>
-<div id="donat-kentang">
-    <img src="media/gambar/Donut kentang/Donat Kentang.jpg" alt="Donat Kentang" width="300">
-  </div>
+      <div class="card">
+        <img src="media/gambar/Ketoprak/Ketoprak.jpg" alt="Ketoprak" />
+        <h3>Ketoprak</h3>
+        <a href="ketoprak.html">Lihat Resep</a>
+      </div>
 
-    <li><a href="telur kecap.html">Telur Kecap</a></li>
-<div id="telur-kecap">
-    <img src="media/gambar/Telur kecap/Telur Kecap.jpg" alt="Kecap width" width="300">
-  </div>
-  </ul>
+      <div class="card">
+        <img src="media/gambar/Pangsit goreng ayam/Pangsit Goreng Ayam.jpg" alt="Pangsit Goreng Ayam" />
+        <h3>Pangsit Goreng Ayam</h3>
+        <a href="pangsit goreng ayam.html">Lihat Resep</a>
+      </div>
+
+      <div class="card">
+        <img src="media/gambar/Donut kentang/Donat Kentang.jpg" alt="Donat Kentang" />
+        <h3>Donat Kentang</h3>
+        <a href="donat kentang.html">Lihat Resep</a>
+      </div>
+
+      <div class="card">
+        <img src="media/gambar/Telur kecap/Telur Kecap.jpg" alt="Telur Kecap" />
+        <h3>Telur Kecap</h3>
+        <a href="telur kecap.html">Lihat Resep</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kelompok Website Panduan Memasak.id - Semua hak dilindungi</p>
+  </footer>
 </body>
 </html>
