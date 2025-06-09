@@ -16,8 +16,8 @@ Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang u
 - Media
 
 ### Fitur Utama :wrench:
-- Video tutorial
-- Kontak
+- Video untuk tutorial memasak
+- Kontak untuk menghubungi pesan
 - 
 ### Struktur Folder :open_file_folder:
 - Index.html:
