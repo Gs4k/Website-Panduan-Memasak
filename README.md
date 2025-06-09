@@ -1,7 +1,8 @@
 # Judul Project : Panduan Memasak 🧑‍🍳
+### Deskripsi :page_with_curl:
 Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang untuk membantu seseorang dalam menyiapkan dan mengolah bahan makanan menjadi hidangan siap saji. Panduan ini mencakup informasi penting seperti daftar bahan, takaran, alat yang dibutuhkan, teknik memasak, waktu memasak, hingga tips penyajian.
 ### Daftar Anggota🧍
-| NAMA          | NIM         | USERNAME        | PERAN / TUGAS                |
+| NAMA          | NIM         | USERNAME        | PERAN / TUGAS         |
 | :-----------: | ----------- | :-------------: | :-------------------: |
 | Gusde         | 240010051   | Gs4k            | HTML Developer        |
 | Putra         | 240010064   | MCtorres45      | CSS Designer          |
@@ -15,7 +16,7 @@ Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang u
 - Media
 
 ### Fitur Utama :wrench:
-- Media/Video tutorial
+- Video tutorial
 - Kontak
 - 
 ### Struktur Folder :open_file_folder:
