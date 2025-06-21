@@ -1,36 +1,50 @@
-<!-- resep.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
+  <!-- Mengatur encoding karakter ke UTF-8 untuk mendukung berbagai karakter -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Membuat tampilan halaman menyesuaikan dengan ukuran layar perangkat (responsive) -->
   <link rel="stylesheet" href="style.css" />
-  <title>Resep - Panduan Memasak</title>
+    <!-- Menghubungkan halaman dengan file CSS eksternal untuk styling -->
 </head>
 <body>
-  <!-- Logo dan Judul -->
-  <header>
-    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
-    <h1>Kumpulan Resep</h1>
+  <header class="main-header">
+      <!-- Logo dan Navigasi ke halaman Index -->
+    <a href="index.html">
+  <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" class="Logo" />
+</a>
+<!-- Tombol menu terpisah di luar <a> -->
+<button id="menu-toggle" class="menu-toggle">☰</button>
+
+  <!-- Navigasi Desktop -->
+    <nav class="desktop-nav">
+      <a href="Index.html">Beranda</a>
+      <a href="resep makanan.html">Resep Makanan</a>
+      <a href="resep minuman.html">Resep Minuman</a>
+      <a href="tentang kami&kontak.html">Tentang Kami & Kontak</a>
+    </nav>
+    <!-- Tombol untuk mengubah tema gelap/terang -->
+    <button id="mode-toggle">🌙</button>
   </header>
 
-  <!-- Navigasi kembali -->
-  <div style="margin-bottom: 10px;">
-    <a href="resep minuman.html">← Kembali ke Resep Minuman</a>
-  </div>
-
-  <!-- Tombol Toggle Menu -->
-  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
-  <nav class="nav-links" id="navMenu">
-    <a href="index.html">Beranda</a>
-    <a href="resep makanan.html">Resep Makanan</a>
-    <a href="resep minuman.html">Resep Minuman</a>
-    <a href="kontak.html">Kontak</a>
-  </nav>
+   <!-- Sidebar Slider Menu -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <span>MENU</span>
+      <button id="close-sidebar" class="close-btn">&times;</button>
+    </div>
+    <nav class="sidebar-nav">
+       <a href="Index.html">Beranda</a>
+      <a href="resep makanan.html">Resep Makanan</a>
+      <a href="resep minuman.html">Resep Minuman</a>
+      <a href="tentang kami&kontak.html">Tentang Kami & Kontak</a>
+    </nav>
+  </aside>
 
  <!-- Resep: Es Lumut Coklat -->
 <h2 id="es-lumut-coklat">🍫 Es Lumut Coklat</h2>
-<img src="media/gambar/Es Lumut/es lumut.jpeg" alt="Es Lumut Coklat" style="width: 400px;">
+<img src="media/gambar/Es Lumut/es lumut.jpeg" alt="Es Lumut Coklat" style="width: 400px;" class="Miaw">
 
 <h3>Bahan-Bahan:</h3>
 <ul>
