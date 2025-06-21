@@ -1,37 +1,50 @@
-<!-- resep.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
+  <!-- Mengatur encoding karakter ke UTF-8 untuk mendukung berbagai karakter -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+  <!-- Membuat tampilan halaman menyesuaikan dengan ukuran layar perangkat (responsive) -->
+  <link rel="stylesheet" href="style.css" />
     <!-- Menghubungkan halaman dengan file CSS eksternal untuk styling -->
-  <title>Resep - Panduan Memasak</title>
 </head>
 <body>
-  <!-- Logo dan Judul -->
-  <header>
-    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" style="width: 200px;">
-    <h1>Kumpulan Resep</h1>
+  <header class="main-header">
+      <!-- Logo dan Navigasi ke halaman Index -->
+    <a href="index.html">
+  <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" class="Logo" />
+</a>
+<!-- Tombol menu terpisah di luar <a> -->
+<button id="menu-toggle" class="menu-toggle">☰</button>
+
+  <!-- Navigasi Desktop -->
+    <nav class="desktop-nav">
+      <a href="Index.html">Beranda</a>
+      <a href="resep makanan.html">Resep Makanan</a>
+      <a href="resep minuman.html">Resep Minuman</a>
+      <a href="tentang kami&kontak.html">Tentang Kami & Kontak</a>
+    </nav>
+    <!-- Tombol untuk mengubah tema gelap/terang -->
+    <button id="mode-toggle">🌙</button>
   </header>
 
-  <!-- Navigasi kembali -->
-  <div style="margin-bottom: 10px;">
-    <a href="resep makanan.html">← Kembali ke Resep Makanan</a>
-  </div>
-
-  <!-- Tombol Toggle Menu -->
-  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
-  <nav class="nav-links" id="navMenu">
-    <a href="index.html">Beranda</a>
-    <a href="resep makanan.html">Resep Makanan</a>
-    <a href="resep minuman.html">Resep Minuman</a>
-    <a href="kontak.html">Kontak</a>
-  </nav>
+   <!-- Sidebar Slider Menu -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <span>MENU</span>
+      <button id="close-sidebar" class="close-btn">&times;</button>
+    </div>
+    <nav class="sidebar-nav">
+       <a href="Index.html">Beranda</a>
+      <a href="resep makanan.html">Resep Makanan</a>
+      <a href="resep minuman.html">Resep Minuman</a>
+      <a href="tentang kami&kontak.html">Tentang Kami & Kontak</a>
+    </nav>
+  </aside>
 
   <!-- Resep 1: Nasi Goreng -->
   <h2 id="nasi-goreng">Nasi Goreng (High Protein)</h2>
-  <img src="media/gambar/Nasi goreng/Nasi Goreng.jpg" alt="Nasi Goreng" style="width: 400px;">
+  <img src="media/gambar/Nasi goreng/Nasi Goreng.jpg" alt="Nasi Goreng" style="width: 400px;" class="Miaw">
   <h3>Bahan-bahan:</h3>
   <ul>
     <li>2 Telur</li>
@@ -74,8 +87,7 @@
       src="media/video/Nasi goreng.mp4"
       title="Video Nasi Goreng"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-      allowautoplay>
+      allowfullscreen>
     </iframe>
   </div>
 
