@@ -13,15 +13,17 @@ Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang u
 - HTML
 - CSS
 - JavaScript
-- Media
 
 ### Fitur Utama :wrench:
 - Video untuk tutorial memasak
 - Kontak untuk menghubungi pesan
-- 
+  
 ### Struktur Folder :open_file_folder:
-- Index.html:
-- 
+- Index.html untuk menampilkan layout website
+- Script.js untuk stop timer saat sudah berjalan, memulai hitung mundur, ampilan menit dan detik timer, & reset ke menit yang terakhir dimasukan.
+- Style.css untuk memberikan tampilan halaman html
+- Media untuk menampilkan halaman gambar, audio & video.
+- Nama makanan untuk menampilkan resep & tutorial untuk memasak
 
 ### Cara Menjalankan Website :globe_with_meridians:
 1. Buka website tersebut
