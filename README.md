@@ -24,7 +24,8 @@ Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang u
 - 
 
 ### Cara Menjalankan Website :globe_with_meridians:
-1. 
+1. Buka website tersebut
+2. Pilih yang ingin memasak
 
 ### Tautan GitHub Pages :link:
 https://github.com/Gs4k/Website-Panduan-Memasak.git
