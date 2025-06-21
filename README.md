@@ -15,19 +15,19 @@ Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang u
 - JavaScript
 
 ### Fitur Utama :wrench:
-- Video untuk tutorial memasak
-- Kontak untuk menghubungi pesan
+- Video untuk tutorial memasak.
+- Kontak untuk menghubungi pesan.
   
 ### Struktur Folder :open_file_folder:
-- Index.html untuk menampilkan layout website
+- Index.html untuk menampilkan layout website.
 - Script.js untuk stop timer saat sudah berjalan, memulai hitung mundur, ampilan menit dan detik timer, & reset ke menit yang terakhir dimasukan.
-- Style.css untuk memberikan tampilan halaman html
+- Style.css untuk memberikan tampilan halaman html.
 - Media untuk menampilkan halaman gambar, audio & video.
-- Nama makanan untuk menampilkan resep & tutorial untuk memasak
+- Nama makanan untuk menampilkan resep & tutorial untuk memasak.
 
 ### Cara Menjalankan Website :globe_with_meridians:
-1. Buka website tersebut
-2. Pilih yang ingin memasak
+1. Buka website tersebut.
+2. Pilih yang ingin memasak.
 
 ### Tautan GitHub Pages :link:
 https://github.com/Gs4k/Website-Panduan-Memasak.git
