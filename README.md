@@ -21,7 +21,7 @@ Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang u
 ### Struktur Folder :open_file_folder:
 - Media: untuk menampilkan halaman gambar, audio & video. 
 - Index.html: untuk menampilkan layout website.
-- Read.md: untuk menjelaskan tentang Project tersebut.
+- Readme.md: untuk menjelaskan tentang Project tersebut.
 - Nama makanan html: untuk menampilkan resep, bahan-bahan, & tutorial untuk memasak.
 - Script.js: untuk stop timer saat sudah berjalan, memulai hitung mundur, ampilan menit dan detik timer, & reset ke menit yang terakhir dimasukan.
 - Style.css: untuk memberikan tampilan halaman html.
