@@ -5,60 +5,71 @@
   <!-- Mengatur encoding karakter ke UTF-8 untuk mendukung berbagai karakter -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Membuat tampilan halaman menyesuaikan dengan ukuran layar perangkat (responsive) -->
-  <title>Beranda - Panduan Memasak</title>
-    <!-- Judul halaman yang muncul di tab browser -->
   <link rel="stylesheet" href="style.css" />
     <!-- Menghubungkan halaman dengan file CSS eksternal untuk styling -->
-  <script src="script.js" defer></script>
-  <!-- Menyisipkan file JavaScript eksternal dan menjalankannya setelah halaman dimuat -->
 </head>
 <body>
-  <header>
-    <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" style="height: 100px;" />
-    <h1>Kumpulan Resep Simpel</h1>
-  
-    <!-- Menu navigasi untuk berpindah antar halaman -->
-    <nav>
-      <a href="index.html">Beranda</a>
+  <header class="main-header">
+      <!-- Logo dan Navigasi ke halaman Index -->
+    <a href="index.html">
+  <img src="media/gambar/Logo/Logo.png" alt="Logo Panduan Memasak" class="Logo" />
+</a>
+<!-- Tombol menu terpisah di luar <a> -->
+<button id="menu-toggle" class="menu-toggle">☰</button>
+
+  <!-- Navigasi Desktop -->
+    <nav class="desktop-nav">
+      <a href="Index.html">Beranda</a>
       <a href="resep makanan.html">Resep Makanan</a>
       <a href="resep minuman.html">Resep Minuman</a>
-      <a href="kontak.html">Kontak</a>
+      <a href="tentang kami&kontak.html">Tentang Kami & Kontak</a>
     </nav>
+    <!-- Tombol untuk mengubah tema gelap/terang -->
+    <button id="mode-toggle">🌙</button>
   </header>
 
-  <main>
-    <section class="intro">
-      <p>Website ini menyediakan berbagai resep dan tips memasak yang sangat mudah dilakukan untuk semua kalangan.</p>
-    </section>
+   <!-- Sidebar Slider Menu -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <span>MENU</span>
+      <button id="close-sidebar" class="close-btn">&times;</button>
+    </div>
+    <nav class="sidebar-nav">
+       <a href="Index.html">Beranda</a>
+      <a href="resep makanan.html">Resep Makanan</a>
+      <a href="resep minuman.html">Resep Minuman</a>
+      <a href="tentang kami&kontak.html">Tentang Kami & Kontak</a>
+    </nav>
+  </aside>
 
+  <main>
     <section class="featured-recipes">
-      <!-- Bagian untuk menampilkan resep unggulan -->
       <h2>Resep Unggulan Hari Ini</h2>
 
       <div class="card">
         <h3>Nasi Goreng (High Protein)</h3>
-        <img src="media/gambar/Nasi goreng/Nasi Goreng.jpg" alt="Nasi Goreng" style="width:100%; max-width:300px;" />
+        <img src="media/gambar/Nasi goreng/Nasi Goreng.jpg" alt="Nasi Goreng" />
         <p>Lezat, mudah dibuat, dan yang paling penting tinggi protein.</p>
         <a href="nasi goreng.html">Lihat Resep</a>
       </div>
 
       <div class="card">
         <h3>Ketoprak</h3>
-        <img src="media/gambar/Ketoprak/Ketoprak.jpg" alt="Ketoprak" style="width:100%; max-width:300px;" />
+        <img src="media/gambar/Ketoprak/Ketoprak.jpg" alt="Ketoprak" />
         <p>Hidangan khas Betawi yang kaya rasa, cocok untuk makan siang ringan.</p>
         <a href="ketoprak.html">Lihat Resep</a>
       </div>
 
       <div class="card">
         <h3>Pangsit Goreng Ayam <span class="tag">Versi Anak Kosan</span></h3>
-        <img src="media/gambar/Pangsit goreng ayam/Pangsit Goreng Ayam.jpg" alt="Pangsit Goreng Ayam" style="width:100%; max-width:300px;" />
+        <img src="media/gambar/Pangsit goreng ayam/Pangsit Goreng Ayam.jpg" alt="Pangsit Goreng Ayam" />
         <p>Dengan bahan sederhana, kamu bisa bikin camilan enak dan hemat!</p>
         <a href="pangsit goreng ayam.html">Lihat Resep</a>
       </div>
 
       <div class="card">
         <h3>Donat Kentang <span class="tag">Ramah Budget</span></h3>
-        <img src="media/gambar/Donat kentang/Donat Kentang.jpg" alt="Donat Kentang" style="width:100%; max-width:300px;" />
+        <img src="media/gambar/Donat kentang/Donat Kentang.jpg" alt="Donat Kentang" />
         <p>Lembut dan manis, cocok untuk sarapan atau bekal kuliah.</p>
         <a href="donat kentang.html">Lihat Resep</a>
       </div>
@@ -66,7 +77,9 @@
   </main>
 
   <footer>
-    <p style="text-align:center; margin-top: 40px;">&copy; 2025 Kelompok Website Panduan Memasak.id - Semua hak dilindungi</p>
+    <p>&copy; 2025 Kelompok Website Panduan Memasak.id - Semua hak dilindungi</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
