@@ -63,3 +63,40 @@ function updateDisplay() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const sidebar = document.getElementById("sidebar");
+  const menuToggle = document.getElementById("menu-toggle");
+  const closeSidebar = document.getElementById("close-sidebar");
+  const modeToggle = document.getElementById("mode-toggle");
+
+  // Buka sidebar
+  menuToggle.addEventListener("click", () => {
+    sidebar.classList.add("open");
+  });
+
+  // Tutup sidebar
+  closeSidebar.addEventListener("click", () => {
+    sidebar.classList.remove("open");
+  });
+
+  // Toggle dark mode
+  modeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    modeToggle.textContent = document.body.classList.contains("dark-mode")
+      ? "☀️"
+      : "🌙";
+  });
+});
+
+// kolom pencaharian
+document.getElementById("searchInput").addEventListener("keyup", function () {
+    const keyword = this.value.toLowerCase();
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(function (card) {
+      const title = card.querySelector("h3").textContent.toLowerCase();
+      const desc = card.querySelector("p").textContent.toLowerCase();
+      const visible = title.includes(keyword) || desc.includes(keyword);
+      card.style.display = visible ? "block" : "none";
+    });
+  });
