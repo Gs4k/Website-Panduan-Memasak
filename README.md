@@ -18,6 +18,7 @@ Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang u
 - Video untuk tutorial atau cara memasak.
 - Kontak untuk menghubungi pesan.
 - Timer memasak untuk menampilkan beberapa menit memasukan bahan-bahan & masakan sudah jadi.
+- Dark mode untuk mengubah tampilan layar website menjadi gelap.
   
 ### Struktur Folder :open_file_folder:
 - Media: untuk menampilkan halaman gambar, audio & video. 
