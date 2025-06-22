@@ -15,8 +15,9 @@ Panduan memasak adalah petunjuk atau langkah-langkah sistematis yang dirancang u
 - JavaScript
 
 ### Fitur Utama :wrench:
-- Video untuk tutorial memasak.
+- Video untuk tutorial atau cara memasak.
 - Kontak untuk menghubungi pesan.
+- Timer memasak untuk menampilkan beberapa menit memasukan bahan-bahan & masakan sudah jadi.
   
 ### Struktur Folder :open_file_folder:
 - Media: untuk menampilkan halaman gambar, audio & video. 
